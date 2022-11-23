@@ -1,0 +1,54 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc}
+\usepackage{amsmath}
+
+\renewcommand{\thefootnote}{(*)}
+
+\title{On the problem of measure of point sets on a line\thanks{Some terms are translated in their modern counterpart: for example {\em gruppo} translates as {\em set} and not as {\em group} in thjis context, etc.}}
+\author{Giuseppe Vitali}
+\date{Bologna, Gamberini e Parmeggiani, 1905}
+
+
+\begin{document}
+
+\maketitle
+
+The problem of the measure of point sets on a line $r$ is to determine for each set $A$ of points of $r$ a positive real number $\mu(A)$, to be said \emph{\bfseries measure} of $A$, such that:
+
+\begin{itemize}
+	\item[$1^\circ$)] Two sets which coincide by means of a rigid motion have the same measure.
+	\item[$2^\circ$)] The union of a family of a finite or countable number of sets, pairwise with no common points, has the sum of measures as measure.
+	\item[$3^\circ$)] The measure of the set of all points in the interval $(0,1)$ is 1. \footnote{ v. {\em Le\c cons} sur l'int\`egration etc. par H. Lebesgue p.103. Paris, Gauthier-Villars, 1904.}
+\end{itemize}
+
+Let $x$ be a point in $r$. Points in $r$ which differ from $x$ by any rational number, be it positive, negative or zero, do form a countable set $A_x$. If $A_{x_1}$ and $A_{x_2}$ are two such sets, they have no element in common or they do coincide.
+
+Let us consider all sets $A_x$, viewed as elements of a set $H$. If $P$ is any point of $r$, then it exists one and only one element in $H$ whom $P$ belongs.
+
+Let us consider for each element $\alpha$ of $H$ a point $P_\alpha$ in the interval $(0,\frac12)$ that belongs to $\alpha$ and let us denote by $G_0$ the set of all points $P_\alpha$. Moreover, if $\rho$ is any rational number, let us denote by $G_\rho$ the set of points $P_\alpha-\rho$.
+
+The sets $G_\rho$ corresponding to different rational values of $\rho$ are pairwise with no common points, and moreover they are a countable set and they have, by $1^\textrm{a})$, the same measure.
+
+The sets
+\[
+	G_0, \quad G_{\frac12}, \quad G_{\frac13}, \quad G_{\frac14}, \dots
+\]
+lie all in the interval $(0,1)$, therefore their union must have measure $m\leq1$.
+
+But one also has
+\begin{align*}
+	m &= \mu(G_0) + \sum_{n=2}^\infty \mu\left(G_{\frac1n}\right) \\
+		&= \lim_{n=\infty} n\cdot\mu(g_0),
+\end{align*}
+so that
+\[
+	\mu(G_0)=0.
+\]
+Therefore, the union of all $G_\rho$ corresponding to different rational values of $\rho$ also has measure zero. But this union is the set of all points in $r$ hence it should have infinite measure. That is enough to conclude that: \emph{\bfseries the problem of measure of point sets on a line is impossible}.
+
+\medbreak
+
+One could object something about the consideration of set $G_0$. That can be be perfectly justified if one admits that the continuum can be well ordered. For people who don't want to accept this our result means: {\em the possibility of the problem of measure for point sets on a line and the possibility to well order the continuum cannot coexist.}
+
+\end{document}

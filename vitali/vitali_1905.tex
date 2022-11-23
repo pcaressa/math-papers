@@ -1,0 +1,55 @@
+\documentclass{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[italian]{babel}
+\usepackage{amsmath}
+
+\frenchspacing
+\renewcommand{\thefootnote}{(*)}
+
+\title{Sul problema della misura dei gruppi di punti di una retta}
+\author{Giuseppe Vitali}
+\date{Bologna, Gamberini e Parmeggiani, 1905}
+
+\begin{document}
+
+\maketitle
+
+Il problema della misura dei gruppi di punti di una retta $r$ è quello di determinare per ogni gruppo $A$ di punti di $r$ un numero reale e positivo $\mu(A)$, che dovrà dirsi \emph{\bfseries misura} di $A$, in modo che:
+
+\begin{itemize}
+	\item[$1^\circ$)] Due gruppi che si possono far coincidere con un conveniente spostamento rigido di uno di essi abbiano la stessa misura.
+	\item[$2^\circ$)] Il gruppo somma di un numero finito o di una infinità numerabile di gruppi, senza punti comuni a due a due, abbia per misura la somma delle misure.
+	\item[$3^\circ$)] La misura del gruppo di tutti i punti dell'intervallo $(0,1)$ sia 1. \footnote{ v. {\em Le\c cons} sur l'int\`egration ecc. par H. Lebesgue p.103. Paris, Gauthier-Villars, 1904.}
+\end{itemize}
+
+Sia $x$ un punto di $r$. I punti di $r$ che differiscono da $x$ per un numero razionale qualsiasi positivo, negativo o nullo formano un gruppo $A_x$ numerabile. Se $A_{x_1}$ e $A_{x_2}$ sono due tali gruppi, o essi sono senza punti comuni o coincidono.
+
+Consideriamo i diversi gruppi $A_x$: essi, considerati come elementi, formano un gruppo $H$. Se $P$ è un punto qualsiasi di $r$, esisterà un elemento ed uno solo di $H$ a cui $P$ appartiene.
+
+Consideriamo per ogni elemento $\alpha$ di $H$ un punto $P_\alpha$ dell'intervallo $(0,\frac12)$ che appartenga ad $\alpha$, ed indichiamo con $G_0$ il gruppo dei punti $P_\alpha$. Se poi $\rho$ è un numero razionale qualsiasi, indicheremo con $G_\rho$ il gruppo dei punti $P_\alpha-\rho$.
+
+I gruppi $G_\rho$ corrispondenti ai diversi valori razionali di $\rho$ sono a due a due senza punti comuni, essi inoltre sono un'infinità numerabile e devono avere per la $1^\textrm{a})$ la stessa misura.
+
+I gruppi
+\[
+	G_0, \quad G_{\frac12}, \quad G_{\frac13}, \quad G_{\frac14}, \dots
+\]
+cadono tutti nell'intervallo $(0,1)$, quindi la loro somma deve avere una misura $m\leq1$.
+
+Ma deve essere
+\begin{align*}
+	m &= \mu(G_0) + \sum_{n=2}^\infty \mu\left(G_{\frac1n}\right) \\
+		&= \lim_{n=\infty} n\cdot\mu(g_0),
+\end{align*}
+e quindi
+\[
+	\mu(G_0)=0.
+\]
+Ma allora la somma di tutti i $G_\rho$ corrispondenti ai diversi valori razionali di $\rho$ deve essa pure avere misura nulla. Però questa somma è il gruppo di tutti i punti di $r$ e quindi dovrebbe avere misura infinita. Ciò basta per concludere che: \emph{\bfseries il problema della misura dei gruppi di punti di una retta è impossibile}.
+
+\medbreak
+
+Qualche cosa si potrebbe obiettare circa la considerazione del gruppo $G_0$. Questa si può perfettamente giustificare se si ammette che il continuo si possa bene ordinare. Per chi non voglia ammettere ciò il nostro risultato significa che: {\em la possibilità del problema della misura dei gruppi di punti di una retta e quella di bene ordinare il continuo non possono coesistere.}
+
+\end{document}
